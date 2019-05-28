@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,OAAO,CAAC,mFAAI",
+    "sources": [
+        "design-system.scss"
+    ],
+    "names": [],
+    "file": "design-system.css"
+}

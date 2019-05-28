@@ -1,12 +1,12 @@
-import React from "react"
-import "./index.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Blogs from "../components/blogs"
-import Tools from "../components/tools"
-import Mindsets from "../components/mindsets"
-import Jobs from "../components/jobs"
-import Typist from "react-typist"
+import React from "react";
+import "./index.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Blogs from "../components/blogs";
+import Tools from "../components/tools";
+import Mindsets from "../components/mindsets";
+import Jobs from "../components/jobs";
+import Typist from "react-typist";
 
 const IndexPage = () => (
   <div>
@@ -125,6 +125,52 @@ const IndexPage = () => (
         </div>
       </div>
 
+      <div className="Fusion">
+        <div className="FusionGroup">
+          <div className="FusionDetails">
+            <div className="FusionTitle">
+              <h2>fusion.</h2>
+              <p>
+                Fusion is a design system made by SAP Tools Team. <br />
+                Design guidelines, patterns & ready-made Angular components
+                working together to craft exceptional experiences. <br />
+                Designed for designers and developed for developers.
+              </p>
+            </div>
+            <div className="FusionButtons">
+              <a
+                href="https://github.wdf.sap.corp/pages/tools/fusion-ux-guidelines/"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                + UX Guidelines
+              </a>
+              <br />
+              <a
+                href="https://sap.sharepoint.com/:f:/t/Fusion/EstJYc6Ip7tLrxz4zxzkQEgBU8cK_6NkLeASyvE9s21YDQ?e=QOXGa6"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                + Sketch Component Files
+              </a>
+              <br />
+              <a
+                href="https://github.wdf.sap.corp/pages/tools/fusion/#/components"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                + Code Library
+              </a>
+            </div>
+          </div>
+          <div className="FusionImg">
+            <img alt="fusion" src={require("../images/fusion.svg")} />
+          </div>
+        </div>
+      </div>
       <hr id="works" />
     </div>
 
@@ -208,6 +254,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

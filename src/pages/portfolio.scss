@@ -175,6 +175,15 @@
       padding-bottom: 20px;
     }
   }
+  a {
+    @extend %p14;
+    font-family: $bodytext;
+    line-height: 2;
+    color: black;
+    &:hover {
+      color: #444444;
+    }
+  }
 }
 
 .PortfolioGroup {

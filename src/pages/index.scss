@@ -282,15 +282,50 @@ hr {
   margin-bottom: 0.5em;
   border-style: inset;
   border-width: 1px;
-  border-color: white;
+  border-color: black;
   @include phone {
     display: none;
   }
 }
 
+.Fusion {
+  @extend %bgblack;
+  padding-top: 150px;
+  .FusionGroup {
+    @extend %page-template;
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    grid-column-gap: 20px;
+
+    .FusionTitle {
+      h2 {
+        @extend %h2;
+      }
+      p {
+        @extend %p14;
+      }
+    }
+    .FusionButtons {
+      a {
+        color: white;
+        text-decoration: none;
+        line-height: 2;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .FusionImg {
+    justify-self: center;
+    img {
+      width: 180px;
+    }
+  }
+}
+
 .OurTools {
   @extend %bgblack;
-  padding-top: 30px;
 }
 
 .OurToolsContainer {

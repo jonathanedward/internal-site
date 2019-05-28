@@ -1,11 +1,11 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -32,7 +32,7 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Sue Schneider – Product Owner 
+              Sue Schneider – Product Owner
               <br />
               STN Development Team
               {/*  
@@ -57,6 +57,24 @@ const IndexPage = () => (
               <br />
               Nikola Freudensprung – UX/UI Designer
             </p>
+            <h6>tools links.</h6>
+            <a
+              href="https://go.support.sap.com/transformationnavigator/#/welcome"
+              className="FusionLinks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tool Link
+            </a>{" "}
+            <br />
+            <a
+              href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/ihnWImfd3sP8dJMNTeSEN5?edit_mode=true"
+              className="FusionLinks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tool SAP JAM Link
+            </a>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -107,6 +125,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

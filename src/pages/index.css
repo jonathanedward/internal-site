@@ -10,14 +10,14 @@
   }
 }
 
-.MindsetTitle h2, .HowsTitle h2, .ToolsTitle h2, .BlogTitle h2, .Details h2 {
+.MindsetTitle h2, .HowsTitle h2, .Fusion .FusionGroup .FusionTitle h2, .ToolsTitle h2, .BlogTitle h2, .Details h2 {
   font-size: 60px;
   line-height: 1;
   margin: 10px auto;
 }
 
 @media (max-width: 640px) {
-  .MindsetTitle h2, .HowsTitle h2, .ToolsTitle h2, .BlogTitle h2, .Details h2 {
+  .MindsetTitle h2, .HowsTitle h2, .Fusion .FusionGroup .FusionTitle h2, .ToolsTitle h2, .BlogTitle h2, .Details h2 {
     font-size: 50px;
   }
 }
@@ -45,7 +45,7 @@
   line-height: 1;
 }
 
-.IntroGroup p, .IntroGroup ul, .Card p, .HowsTitle p, .Tool h6 p {
+.IntroGroup p, .IntroGroup ul, .Card p, .HowsTitle p, .Fusion .FusionGroup .FusionTitle p, .Tool h6 p {
   font-size: 14px;
   line-height: 1.5;
   margin: 10px auto;
@@ -63,7 +63,7 @@
   margin: 10px auto;
 }
 
-.StartHeroGroup, .IntroGroup, .MindsetTitle, .HowWeWorkGroup, .OurToolsContainer, .BlogContainer, .CareersSection, .FooterContainer {
+.StartHeroGroup, .IntroGroup, .MindsetTitle, .HowWeWorkGroup, .Fusion .FusionGroup, .OurToolsContainer, .BlogContainer, .CareersSection, .FooterContainer {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -73,7 +73,7 @@
   color: black;
 }
 
-.HowWeWork, .OurTools {
+.HowWeWork, .Fusion, .OurTools {
   background-color: black;
   color: white;
 }
@@ -355,7 +355,7 @@ hr {
   margin-bottom: 0.5em;
   border-style: inset;
   border-width: 1px;
-  border-color: white;
+  border-color: black;
 }
 
 @media (max-width: 640px) {
@@ -364,8 +364,35 @@ hr {
   }
 }
 
-.OurTools {
-  padding-top: 30px;
+.Fusion {
+  padding-top: 150px;
+}
+
+.Fusion .FusionGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.Fusion .FusionGroup .FusionButtons a {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.Fusion .FusionGroup .FusionButtons a:hover {
+  text-decoration: underline;
+}
+
+.Fusion .FusionImg {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Fusion .FusionImg img {
+  width: 180px;
 }
 
 .OurToolsContainer {

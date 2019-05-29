@@ -1,11 +1,12 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
+import Person from "../components/person";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -31,7 +32,12 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Frank Imhof - Product Manager <br />
+              <Person
+                link="ttps://people.wdf.sap.corp/profiles/D003563"
+                name="Frank Imhof"
+                job="Product Manager"
+              />
+              <br />
               Matthias Kammerer - Support
               <br />
               Bernd Falkenberg - Architect
@@ -52,8 +58,38 @@ const IndexPage = () => (
               <br />
               Gerhard Weigelt - Developer
               <br />
-              Nikola Freudensprung - UX Designer
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D020171"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nikola Freudensprung
+                </a>{" "}
+                – UX Designer{" "}
+              </span>
             </p>
+            <h6>tools links.</h6>
+            <div className="ToolLinks">
+              <a
+                href="https://i7p.wdf.sap.corp/ppmslight/#/home"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PPMS
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/HYtusJWdsP46WIp7p8I5mi?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -100,6 +136,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

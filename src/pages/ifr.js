@@ -1,11 +1,12 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
+import Person from "../components/person";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -40,8 +41,32 @@ const IndexPage = () => (
               <br />
               Sandeep Kaur - Developer
               <br />
-              Nikola Freudensprung - UX Designer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D020171"
+                name="Nikola Freudensprung"
+                job="UX Designer"
+              />
             </p>
+            <h6>tools links.</h6>
+            <div className="ToolLinks">
+              <a
+                href="https://ifr.tools.sap.corp/sap/bc/bsp/pct/ifr_app/#/"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Innovation and Feature Repository
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/c1e0ypUdfoPMeMwLNLvWNE?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -88,6 +113,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

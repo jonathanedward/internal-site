@@ -175,10 +175,13 @@
       padding-bottom: 20px;
     }
   }
+  .ToolLinks {
+    margin-top: 10px;
+  }
   a {
     @extend %p14;
-    font-family: $bodytext;
     line-height: 2;
+    font-family: $bodytext;
     color: black;
     &:hover {
       color: #444444;

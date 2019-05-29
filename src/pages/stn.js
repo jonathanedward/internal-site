@@ -32,7 +32,17 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Sue Schneider – Product Owner
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D029110"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Susanne Schneider
+                </a>{" "}
+                – Product Owner
+              </span>
               <br />
               STN Development Team
               {/*  
@@ -53,28 +63,50 @@ const IndexPage = () => (
               <br />
               */}
               <br />
-              Astrid Kadel – UX/UI Designer
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D072428"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Astrid Kadel
+                </a>{" "}
+                – UX/UI Designer{" "}
+              </span>
               <br />
-              Nikola Freudensprung – UX/UI Designer
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D020171"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nikola Freudensprung
+                </a>{" "}
+                – UX/UI Designer{" "}
+              </span>
             </p>
             <h6>tools links.</h6>
-            <a
-              href="https://go.support.sap.com/transformationnavigator/#/welcome"
-              className="FusionLinks"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Tool Link
-            </a>{" "}
-            <br />
-            <a
-              href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/ihnWImfd3sP8dJMNTeSEN5?edit_mode=true"
-              className="FusionLinks"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Tool SAP JAM Link
-            </a>
+            <div className="ToolLinks">
+              <a
+                href="https://go.support.sap.com/transformationnavigator/#/welcome"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SAP Transformation Navigator
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/ihnWImfd3sP8dJMNTeSEN5?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>

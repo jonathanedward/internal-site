@@ -1,11 +1,11 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -29,11 +29,52 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Michael Gauges - Product Manager <br />
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D023877"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Michael Gauges
+                </a>{" "}
+                – Product Manager
+              </span>
+              <br />
               Sirius Development Team <br />
-              Roman Kostka - UX Designer
+              <span>
+                <a
+                  href="https://people.wdf.sap.corp/profiles/D062131"
+                  className="FusionLinks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Roman Kostka
+                </a>{" "}
+                – UX Designer{" "}
+              </span>
               <br />
             </p>
+            <h6>tools links.</h6>
+            <div className="ToolLinks">
+              <a
+                href="https://sirius.tools.sap.corp/sirius/#/search"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sirius
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/bOpKuVuiLZSRRZAPaYdgfH?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -68,6 +109,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,11 +1,12 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
+import Person from "../components/person";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -31,10 +32,38 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Roman Kostka - Product Manager
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D062131"
+                name="Roman Kostka"
+                job="Product Manager"
+              />
               <br /> Lucid Development Team <br />
-              Abhinav Gupta - UX Designer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I343875"
+                name="Abhinav Gupta"
+                job="UX Designer"
+              />
             </p>
+            <h6>tools links.</h6>
+            <div className="ToolLinks">
+              <a
+                href="https://ifp.wdf.sap.corp/lucidcapacity/default.htm?sap-sessioncmd=open#/"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lucid
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/amYoi3xp1c0uWxYCWfjTQV?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -65,6 +94,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { Link } from "gatsby";
 import { genericHashLink } from "react-router-hash-link";
+import Person from "../components/person";
 
 const HashLink = props => genericHashLink(props, Link);
 
@@ -32,17 +33,11 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              <span>
-                <a
-                  href="https://people.wdf.sap.corp/profiles/D029110"
-                  className="FusionLinks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Susanne Schneider
-                </a>{" "}
-                – Product Owner
-              </span>
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D029110"
+                name="Susanne Schneider"
+                job="Product Owner"
+              />
               <br />
               STN Development Team
               {/*  
@@ -63,29 +58,17 @@ const IndexPage = () => (
               <br />
               */}
               <br />
-              <span>
-                <a
-                  href="https://people.wdf.sap.corp/profiles/D072428"
-                  className="FusionLinks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Astrid Kadel
-                </a>{" "}
-                – UX/UI Designer{" "}
-              </span>
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D072428"
+                name="Astrid Kadel"
+                job="UX/UI Designer"
+              />
               <br />
-              <span>
-                <a
-                  href="https://people.wdf.sap.corp/profiles/D020171"
-                  className="FusionLinks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Nikola Freudensprung
-                </a>{" "}
-                – UX/UI Designer{" "}
-              </span>
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D020171"
+                name="Nikola Freudensprung"
+                job="UX/UI Designer"
+              />
             </p>
             <h6>tools links.</h6>
             <div className="ToolLinks">

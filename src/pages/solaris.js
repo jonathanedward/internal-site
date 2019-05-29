@@ -1,11 +1,12 @@
-import React from "react"
-import "./portfolio.css"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
-import { genericHashLink } from "react-router-hash-link"
+import React from "react";
+import "./portfolio.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "gatsby";
+import { genericHashLink } from "react-router-hash-link";
+import Person from "../components/person";
 
-const HashLink = props => genericHashLink(props, Link)
+const HashLink = props => genericHashLink(props, Link);
 
 const IndexPage = () => (
   <div>
@@ -32,6 +33,11 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D072428"
+                name="André Stern"
+                job="Product Owner"
+              />
               André Stern – Product Owner <br />
               Birger Lehmann – Architect <br />
               Smitha C. Patil – Co-Architect
@@ -44,6 +50,26 @@ const IndexPage = () => (
               <br />
               Sarina Walter – UX/UI Designer
             </p>
+            <h6>tools links.</h6>
+            <div className="ToolLinks">
+              <a
+                href="https://solaris.tools.sap.corp/solaris/#/context/I_CROSS/bcm"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Solaris
+              </a>{" "}
+              <br />
+              <a
+                href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/c1e0ypUdfoPMeMwLNLvWNE?edit_mode=true"
+                className="FusionLinks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tool SAP JAM Link
+              </a>
+            </div>
           </div>
           <div className="Brief">
             <h6>the brief.</h6>
@@ -88,6 +114,6 @@ const IndexPage = () => (
 
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

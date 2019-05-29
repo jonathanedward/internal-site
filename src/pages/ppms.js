@@ -38,37 +38,71 @@ const IndexPage = () => (
                 job="Product Manager"
               />
               <br />
-              Matthias Kammerer - Support
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D032118"
+                name="Matthias Kammerer"
+                job="Support"
+              />
               <br />
-              Bernd Falkenberg - Architect
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D027189"
+                name="Bernd Falkenberg"
+                job="Architect"
+              />
               <br />
-              Veronika Wehrle - Architect
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D027943"
+                name="Veronika Wehrle"
+                job="Architect"
+              />
               <br />
-              Christian Schneider - Architect
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D072602"
+                name="Christian Schneider"
+                job="Architect"
+              />
               <br />
-              Jin Chen - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D050227"
+                name="Jin Chen"
+                job="Developer"
+              />
               <br />
-              Gunnar Kiesewalter - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D035448"
+                name="Gunnar Kiesewalter"
+                job="Developer"
+              />
               <br />
-              Pavel Komardin - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D065326"
+                name="Pavel Komardin"
+                job="Developer"
+              />
               <br />
-              Christian Riedl - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D027947"
+                name="Christian Riedl"
+                job="Developer"
+              />
               <br />
-              Matthias Scudlik - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D057129"
+                name="Matthias Scudlik"
+                job="Developer"
+              />
               <br />
-              Gerhard Weigelt - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D023800"
+                name="Gerhard Weigelt"
+                job="Developer"
+              />
               <br />
-              <span>
-                <a
-                  href="https://people.wdf.sap.corp/profiles/D020171"
-                  className="FusionLinks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Nikola Freudensprung
-                </a>{" "}
-                – UX Designer{" "}
-              </span>
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D020171"
+                name="Nikola Freudensprung"
+                job="UX Designer"
+              />
             </p>
             <h6>tools links.</h6>
             <div className="ToolLinks">

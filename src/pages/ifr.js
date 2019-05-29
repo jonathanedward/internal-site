@@ -30,16 +30,41 @@ const IndexPage = () => (
           <div className="Group">
             <h6>teams info.</h6>
             <p>
-              Shadab Shafiq - Product Manager <br />
-              Aditya Bikram Pattnaik - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I030344"
+                name="Shadab Shafiq"
+                job="Product Manager"
+              />
               <br />
-              Pallavika Nesargikar - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I068237"
+                name="Aditya Bikram Pattnaik"
+                job="Developer"
+              />
               <br />
-              Pavan Raghu - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I037290"
+                name="Pallavika Nesargikar"
+                job="Developer"
+              />
               <br />
-              Ravi Suresh Mashru - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I347871"
+                name="Pavan Raghu"
+                job="Developer"
+              />
               <br />
-              Sandeep Kaur - Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I322118"
+                name="Ravi Suresh Mashru"
+                job="Developer"
+              />
+              <br />
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I328192"
+                name="Sandeep Kaur"
+                job="Developer"
+              />
               <br />
               <Person
                 link="https://people.wdf.sap.corp/profiles/D020171"

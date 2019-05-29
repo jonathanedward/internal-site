@@ -34,21 +34,46 @@ const IndexPage = () => (
             <h6>teams info.</h6>
             <p>
               <Person
-                link="https://people.wdf.sap.corp/profiles/D072428"
+                link="https://people.wdf.sap.corp/profiles/D042826"
                 name="André Stern"
                 job="Product Owner"
               />
-              André Stern – Product Owner <br />
-              Birger Lehmann – Architect <br />
-              Smitha C. Patil – Co-Architect
               <br />
-              Sebastian Protz – Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D024523"
+                name="Birger Lehmann"
+                job="Architect"
+              />
               <br />
-              Supriya Raj – Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/I036581"
+                name="Smitha C. Patil"
+                job="Co-Architect"
+              />
               <br />
-              Venkata Gopi Thokala – Developer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D069988"
+                name="Sebastian Protz"
+                job="Developer"
+              />
               <br />
-              Sarina Walter – UX/UI Designer
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D070024"
+                name="Supriya Raj"
+                job="Developer"
+              />
+              <br />
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D071973"
+                name="Venkata Gopi Thokala"
+                job="Developer"
+              />
+              <br />
+              <Person
+                link="https://people.wdf.sap.corp/profiles/D068360"
+                name="Sarina Walter"
+                job="UX/UI Designer"
+              />
             </p>
             <h6>tools links.</h6>
             <div className="ToolLinks">

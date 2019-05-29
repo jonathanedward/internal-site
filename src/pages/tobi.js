@@ -28,16 +28,7 @@ const IndexPage = () => (
         <div className="IntroPortoDetail">
           <div className="Group">
             <h6>teams info.</h6>
-            <p>
-              Tobi Development Team
-              {/* 
-              John Doe - Product Manager <br />
-              Andre Schneider - Developer
-              <br />
-              Janis Müller - UX Designer
-              <br />
-               */}
-            </p>
+            <p>Tobi Development Team</p>
             <h6>tools links.</h6>
             <div className="ToolLinks">
               <a

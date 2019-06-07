@@ -148,15 +148,6 @@ const IndexPage = () => (
               </a>
               <br />
               <a
-                href="https://sap.sharepoint.com/:f:/t/Fusion/EstJYc6Ip7tLrxz4zxzkQEgBU8cK_6NkLeASyvE9s21YDQ?e=QOXGa6"
-                className="FusionLinks"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                + Sketch Component Files
-              </a>
-              <br />
-              <a
                 href="https://github.wdf.sap.corp/pages/tools/fusion/#/components"
                 className="FusionLinks"
                 target="_blank"
@@ -178,7 +169,18 @@ const IndexPage = () => (
       <div className="OurToolsContainer">
         <div className="ToolsTitle">
           <h2>our tools.</h2>
-          <p>A sneak-peek to our awesome tools.</p>
+          <p>
+            A sneak-peek to our awesome tools. See our complete tools portfolio
+            at{" "}
+            <a
+              href="https://jam4.sapjam.com/groups/uH5dGdf6wJ0S9zC44tHNKb/overview_page/sjreR3I7JAGXKJ6YXYg13W"
+              className="FusionLinks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              our SAP Jam page.
+            </a>
+          </p>
         </div>
       </div>
       <div className="ToolsGroup">

@@ -343,6 +343,13 @@ hr {
   }
   p {
     @extend %p16;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
